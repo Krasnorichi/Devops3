@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js">
+</script>
+
+  <title>Current weather</title>
+  <style>
+    body {
+        background-color: #fff67a
+    }
+
+    h1 {
+        font-size: 36px;
+        color: {{ h1_color }};
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div><h1>Что же сейчас у нас на улице?</h1></div>
+  <h2>Данные о погоде сейчас такие:</h2>
+    <p>
+      <ol>
+        <li><p>Максимальная температура: {{tmax}}</p></li>
+        <li><p>Минимальная температура: {{tmin}}</p></li>
+        <li><p>Ощущается как: {{flike}}</p></li>
+        <li><p>Давление: {{press}}</p></li>
+      </ol>
+    </p>
+</body>
+</html>

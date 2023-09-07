@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js">
+</script>
+
+ <style type="text/css">
+
+ body {
+  background-color: #fff67a
+ }
+
+ H1 {
+  text-shadow:
+    1px 1px 0 orange,
+    1px -1px 0 orange,
+    -1px 1px 0 orange,
+    -1px -1px 0 orange;
+  color: white;
+  transition: all 1s;
+ }
+
+ H1:hover {
+  text-shadow:
+    1px 1px 0 yellowgreen,
+    1px -1px 0 yellowgreen,
+    -1px 1px 0 yellowgreen,
+    -1px -1px 0 yellowgreen;
+ }
+
+  div {
+      width: 306px;	height: 120px;
+
+      background: #fc0; /* Цвет фона */
+
+      outline: 2px solid #000; /* Чёрная рамка */
+      border: 3px solid #fff; /* Белая рамка */
+      border-radius: 10px; /* Радиус скругления */
+      text-align: center;
+  }
+
+  H2 {
+      font-family: Comic Sans MS;
+  } 
+
+  p {
+      color: {{ p_color }};
+      font-size: {{ p_font_size }};
+      line-height: {{ p_line_height }};
+  }
+
+ </style>
+</head>
+<body>
+
+   <div>
+     <h1>
+
+       Что же сейчас у нас на улице?
+
+     </h1>
+   </div>
+     <h2>
+              Данные о погоде сейчас такие:<br>
+     </h2>
+          <ol>
+              <p>
+              <li>Максимальная температура: {{tmax}}</li>
+              <li>Минимальная температура: {{tmin}}</li>
+              <li>Ощущается как: {{flike}}</li>
+              <li>Давление: {{press}}</li>
+              </p>
+          </ol>
+ </body>
+</html>
+
